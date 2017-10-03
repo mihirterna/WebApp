@@ -1,0 +1,44 @@
+<html>
+<head>
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+<script>
+  var config = {
+    apiKey: "AIzaSyDuo3-oBvvMdA2mwC59bb1xMTtz-0zcReE",
+    authDomain: "https://bookinshort.firebaseapp.com",
+    databaseURL: "https://bookinshort.firebaseio.com/",
+    storageBucket: "gs://bookinshort.appspot.com/",
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="index.js"></script>
+<title>
+BookInShort
+</title>
+</head>
+<body>
+<br>
+<br>
+<div class="mainDiv" align="left">
+<h1 align="left"> Firebase App </h1>
+<textarea id="lang" placeholder="Enter Language"></textarea>
+<br>
+<textarea id="genre" placeholder="Enter Genre"></textarea>
+<br>
+<textarea id="name" placeholder="Enter Book Name"></textarea>
+<br>
+<textarea id="author" placeholder="Enter Author Name"></textarea>
+<br>
+<textarea id="describ" placeholder="Enter Description"></textarea>
+<br>
+<textarea id="tab1" placeholder="Enter tab1"></textarea>
+<br>
+<textarea id="tab2" placeholder="Enter tab2"></textarea>
+<br>
+<button id="submit" onclick="submitClick()">Click Me</button>
+</div>
+</body>
+</html>
